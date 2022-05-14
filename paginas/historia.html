@@ -7,13 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foo Figthers: Fan Page</title>
     <link rel="icon" href="../recursos/logo/favicon-16x16.png">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@1&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <!--BODY-->
-<body>
+<body class="body__index">
 <!--HEADER-->
 <header class="header">
     <span class="header__logo">
@@ -34,25 +39,33 @@
     </nav>
     </header>
 <!--MAIN-->
-    <main class="main__historia">
-        <section class="main__historia__seccion">
-            <div>
+    <main class="container">
+        <article class="row">
+            <div class="historia__div">
                 <p>Para analizar la historia de Foo Figthers debemos empezar por entender el pensamiento de su lider y vocalista: Dave Grohl,
                 sus inicios, su concepto de musica, de banda y por supuesto del Rock.
                 </p>
             </div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/NTRMNGUphgM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p>Foo Fighters es una banda de rock estadounidense formada en la ciudad de Seattle en 1994 por Dave Grohl, exbaterista de Nirvana y Scream.
-            El grupo debe su nombre a los ovnis y los diversos fenómenos aéreos que fueron reportados por los pilotos de los aviones aliados en la Segunda Guerra Mundial, que se conocen colectivamente como Foo Fighters. Antes del lanzamiento de su álbum debut en 1995, Grohl, como único miembro oficial, reclutó al bajista Nate Mendel y el baterista William Goldsmith, ambos anteriormente miembros de Sunny Day Real Estate, así como su compañero en las giras de Nirvana, Pat Smear como guitarrista para completar la alineación.
-            </p>
-            <p>La banda comenzó con actuaciones en Portland, Oregón. Goldsmith renunció durante la grabación del segundo álbum del grupo, The Colour and the Shape (1997), cuando la mayoría de las partes de batería fueron re-grabadas por el propio Grohl, hasta que luego se unió Taylor Hawkins como baterista. La partida de Smear siguió poco después.
-            Fue reemplazado por Franz Stahl, respectivamente, aunque fue despedido antes de la grabación del tercer álbum del grupo, There Is Nothing Left to Lose (1999). La banda continuó brevemente como trío hasta que Chris Shiflett se unió como guitarrista principal de la banda después de la finalización de There Is Nothing Left to Lose. La banda lanzó su cuarto álbum, One by One, en 2002. El grupo siguió esa versión con la de dos discos In Your Honor (2005), que se divide entre canciones acústicas y material más pesado. Pat Smear volvió a la banda en ese mismo año, y se sumó el tecladista Rami Jaffee.
-            Foo Fighters han vendido más de 15 millones de discos en todo el mundo. Foo Fighters lanzó su sexto álbum, Echoes, Silence, Patience & Grace, en 2007. En 2010, se confirmó que Smear se había unido oficialmente a la banda después de la gira con Foo Fighters como un miembro no oficial entre 2006 y 2009.</p>
-            <p>En el transcurso de la carrera de la banda, cuatro de sus álbumes han ganado el Premio Grammy al mejor álbum de rock. El séptimo álbum de estudio de la banda, Wasting Light, producido por Butch Vig (reconocido productor de Nirvana), fue lanzado en 2011 y su octavo álbum, Sonic Highways, además de su segundo grabado con Butch Vig, se dio a conocer en noviembre de 2014. 
-            Su noveno álbum fue Concrete and Gold, producido por Greg Kurstin y lanzado en todo el mundo el 15 de septiembre de 2017, a través de RCA Records. 
-            El álbum presenta una fusión de géneros musicales como hard rock y pop. Concrete and Gold se refiere al futuro de Estados Unidos desde el punto de vista del líder de la banda y principal compositor Dave Grohl, con el contexto de las elecciones de 2016 y la presidencia de Donald Trump citados como grandes influencias por Grohl. Las yuxtaposiciones son un motivo común en la composición lírica y musical del álbum, y Grohl describe el tema general del álbum como «esperanza y desesperación», ese álbum fue la primera aparición de Rami Jaffee como miembro oficial. Su décimo álbum de estudio fue Medicine at Midnight, el último en contar con la participación de Taylor Hawkins, antes de su muerte.
-            </p>
-        </section>
+            <iframe class="animate__animated animate__zoomIn" width="560" height="315" src="https://www.youtube.com/embed/NTRMNGUphgM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="col-xl-6 col-md-6 col-sm-12">
+                <p>Foo Fighters es una banda de rock estadounidense formada en la ciudad de Seattle en 1994 por Dave Grohl, exbaterista de Nirvana y Scream.
+                El grupo debe su nombre a los ovnis y los diversos fenómenos aéreos que fueron reportados por los pilotos de los aviones aliados en la Segunda Guerra Mundial, que se conocen colectivamente como Foo Fighters. Antes del lanzamiento de su álbum debut en 1995, Grohl, como único miembro oficial, reclutó al bajista Nate Mendel y el baterista William Goldsmith, ambos anteriormente miembros de Sunny Day Real Estate, así como su compañero en las giras de Nirvana, Pat Smear como guitarrista para completar la alineación.
+                La banda comenzó con actuaciones en Portland, Oregón. Goldsmith renunció durante la grabación del segundo álbum del grupo, The Colour and the Shape (1997), cuando la mayoría de las partes de batería fueron re-grabadas por el propio Grohl, hasta que luego se unió Taylor Hawkins como baterista. La partida de Smear siguió poco después.
+                </p>
+                <p>Fue reemplazado por Franz Stahl, respectivamente, aunque fue despedido antes de la grabación del tercer álbum del grupo, There Is Nothing Left to Lose (1999). La banda continuó brevemente como trío hasta que Chris Shiflett se unió como guitarrista principal de la banda después de la finalización de There Is Nothing Left to Lose. La banda lanzó su cuarto álbum, One by One, en 2002. El grupo siguió esa versión con la de dos discos In Your Honor (2005), que se divide entre canciones acústicas y material más pesado. Pat Smear volvió a la banda en ese mismo año, y se sumó el tecladista Rami Jaffee.
+                Foo Fighters han vendido más de 15 millones de discos en todo el mundo. Foo Fighters lanzó su sexto álbum, Echoes, Silence, Patience & Grace, en 2007. En 2010, se confirmó que Smear se había unido oficialmente a la banda después de la gira con Foo Fighters como un miembro no oficial entre 2006 y 2009.En el transcurso de la carrera de la banda, cuatro de sus álbumes han ganado el Premio Grammy al mejor álbum de rock.
+                </p>
+            </div>
+            <div class="col-xl-6 col-md-6 col-sm-12">
+                <p>El séptimo álbum de estudio de la banda, Wasting Light, producido por Butch Vig (reconocido productor de Nirvana), fue lanzado en 2011 y su octavo álbum, Sonic Highways, además de su segundo grabado con Butch Vig, se dio a conocer en noviembre de 2014. 
+                Su noveno álbum fue Concrete and Gold, producido por Greg Kurstin y lanzado en todo el mundo el 15 de septiembre de 2017, a través de RCA Records. 
+                El álbum presenta una fusión de géneros musicales como hard rock y pop. Concrete and Gold se refiere al futuro de Estados Unidos desde el punto de vista del líder de la banda y principal compositor Dave Grohl, con el contexto de las elecciones de 2016 y la presidencia de Donald Trump citados como grandes influencias por Grohl. Las yuxtaposiciones son un motivo común en la composición lírica y musical del álbum, y Grohl describe el tema general del álbum como «esperanza y desesperación», ese álbum fue la primera aparición de Rami Jaffee como miembro oficial. Su décimo álbum de estudio fue Medicine at Midnight, el último en contar con la participación de Taylor Hawkins, antes de su muerte.
+                </p>
+                <p>El estilo musical de Foo Fighters ha sido descrito como rock alternativo, post-grunge y hard rock. Cuando Dave Grohl inició la banda, su música a menudo era comparada con la de su anterior banda, Nirvana. Grohl reconoció que el cantante y guitarrista de Nirvana, Kurt Cobain fue su mayor influencia a la hora de componer. Foo Fighters combinaba estrofas tranquilas con estribillos potentes en sus composiciones, influenciado por los gustos musicales de los miembros de Nirvana que pasaban por grupos como The Knack, Bay City Rollers, Beatles, y ABBA, además de Flipper, Pixies y Black Flag entre otros, como Alan di Perna describe en la revista Guitar World en agosto de 1997.
+                Para el primer álbum, Grohl compuso las guitarras de la manera más rítmica posible. Las enfocó de una manera similar a su forma de tocar la batería, asignando diferentes partes de esta a distintas cuerdas de la guitarra. Dave dijo, "Puedo escuchar la canción en mi cabeza antes de finalizarla."
+                </p>
+            </div>
+        </article>
     </main>
 <!--FOOTER-->     
     <footer class="footer">
@@ -64,6 +77,7 @@
         <div>
             <h4 class="footer__h4">Todos los derechos reservados.</h4>
         </div>
-    </footer>        
+    </footer>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>      
 </body>
 </html>
