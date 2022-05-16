@@ -56,11 +56,15 @@ html{
     font-size: 1rem;
 }
 /*COMIENZO DE LA NAV-------------------------------------------*/
+nav{
+    align-items: flex-end;
+    justify-content: start;
+}
 .header__nav{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: end ;
     padding: 0.5rem;
 }
 .header__nav li{
@@ -86,7 +90,7 @@ li a:visited{
 li a:hover{
     text-decoration: none;
     color:antiquewhite;
-    text-shadow: 1px 2px 0px #2c2c2b;
+    text-shadow: 1px 2px 0px #d9a84e;
 }
 /*FIN DE LA NAV------------------------------------------------*/
 /*FIN DEL HEADER-----------------------------------------------*/
@@ -334,11 +338,11 @@ h2 a:hover{
         flex-wrap: wrap;
     }
     .header__logo img{
-        max-width:4rem; 
+        max-width:5rem; 
     }
-    .header__titulo{  
-        text-align:center;
-        font-size:1.2rem;
+    .header__titulo h1{  
+        text-align:start;
+        font-size:2.5rem;
     }
     .header__titles{
         display: flex;
@@ -348,3 +352,54 @@ h2 a:hover{
         font-size: 0.5rem;
         align-self: center;  
     }
+/*540px TABLET-----------------------------------------*/
+@media(min-width: 540px) and (max-width: 770px){
+    /*GENERALES-------------------------------------*/
+    .header{
+        display: flex;
+        flex-direction: row;
+    }
+    .header__logo img{
+        max-width:2rem; 
+    }
+    .header__titulo h1{  
+        text-align:center;
+        font-size:2rem;
+    }
+    .header__titles{
+        display: flex;
+        flex-direction: column;
+    }
+    .header__subtitulo{
+        font-size: 0.75rem;
+        align-self: center;  
+    }
+    .footer__redes img{
+        max-width: 2rem; 
+        padding-top: 2rem;
+    }
+    .footer__h4{
+        align-self: center;
+        padding-top: 1rem;
+    }
+    /*INTEGRANTES--------------------------------------*/
+    .integrantes__titulo{
+        align-self: center;
+        font-size:1.5rem;
+    }
+    .main__integrantes__flex{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .main__integrantes__flex p{
+        align-self: flex-start;
+        max-width: 100%;
+        margin-top: 0.5rem;
+    }
+    /*DISCOGRAFIA-------------------------------------*/
+    .main__discografia__disco li{
+        font-size: 0.8rem;
+    }
+}
+/*FIN DE MEDIA QUERIES----------------------------------*/
