@@ -1,0 +1,78 @@
+.header{
+    grid-area: header;
+    display: flex;
+    flex-wrap: wrap;
+    background-color:$color-fondo-header; 
+    border-radius: 15px;
+    box-shadow:$color-sombra-caja;
+    &__logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+        & img{
+        max-width:7rem; 
+        padding: 1rem;
+        }
+    }
+    &__titles{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-grow: 1;
+    }
+    &__titulo h1{
+    font-family: 'Lobster', cursive; 
+    color:$color-titulo-header; 
+    text-shadow:$color-sombra-titulo;  
+    text-align:center;
+    font-size:3.5rem;
+    }
+    &__subtitulo{
+        align-self: center;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+        color:$color-subtitulo-header; 
+        text-shadow:$color-sombra-subtitulo;
+        padding: 0.5rem;
+    }
+    &__subtitulo h3{
+        font-size: 1rem;
+    }
+    &__nav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: end ;
+        padding: 0.5rem;
+        & li{
+            list-style: none;
+            background-color:$color-fondo-caja;
+            box-shadow:$color-sombra-caja; 
+            border-radius: 20px; 
+            font-family: 'Lobster', cursive;  
+            padding: 0.3rem;
+            & a,
+            a:active{
+                text-decoration: none;
+                color:$color-letras-parrafos;
+                text-shadow:$color-sombra-parrafos;
+            }
+            a:visited{
+            text-decoration: none;
+            color:$color-letras-parrafos;
+            text-shadow:$color-sombra-parrafos;
+            }
+            a:hover{
+            text-decoration: none;
+            color:$color-letras-parrafos;
+            text-shadow:$color-sombra-navegacion;
+            }
+        }
+    }
+}
+nav{
+    align-items: flex-end;
+    justify-content: start;
+}
+
+
