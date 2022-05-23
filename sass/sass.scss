@@ -190,23 +190,32 @@ html{
     .header{
         display: flex;
         flex-direction: row;
+        height:auto;
     }
+
     .header__nav li{
+        height: auto;
         padding: 0.15rem;
+        margin: 5px;
     }
     .header__nav{
+        height: auto;
         flex-wrap: wrap;
+        width: 22rem;
     }
     .header__logo img{
         max-width:5rem; 
     }
     .header__titulo h1{  
-        text-align:start;
+        text-align:center;
         font-size:2.5rem;
     }
     .header__titles{
         display: flex;
         flex-direction: column;
+        height: 8rem;
+        align-items: center;
+        justify-content: center;
     }
     .header__subtitulo{
         font-size: 0.5rem;
@@ -231,7 +240,7 @@ html{
         flex-direction: row;
     }
     .header__logo img{
-        max-width:5rem; 
+        max-width:6rem;
     }
     .header__titulo h1{  
         text-align:center;
@@ -240,6 +249,9 @@ html{
     .header__titles{
         display: flex;
         flex-direction: column;
+        height: 7rem;
+        align-items: center;
+        justify-content: center;
     }
     .header__subtitulo{
         font-size: 0.75rem;
