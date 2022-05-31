@@ -1,0 +1,2 @@
+30/05
+Agregue keywords, un sitemap, etiquetas <title> personalizadas, descripcion de pagina y 3 mixin.
