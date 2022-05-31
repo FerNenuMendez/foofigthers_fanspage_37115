@@ -48,22 +48,19 @@
         padding: 0.5rem;
         & li{
             list-style: none;
-            background-color:$color-fondo-caja;
-            box-shadow:$color-sombra-caja; 
             border-radius: 20px; 
             font-family: 'Lobster', cursive;
             margin: 3px;  
             padding: 0.3rem;
+            @include parrafos;
             & a,
             a:active{
                 text-decoration: none;
-                color:$color-letras-parrafos;
-                text-shadow:$color-sombra-parrafos;
+                @include parrafos;
             }
             a:visited{
             text-decoration: none;
-            color:$color-letras-parrafos;
-            text-shadow:$color-sombra-parrafos;
+            @include parrafos;
             }
             a:hover{
             text-decoration: none;

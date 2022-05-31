@@ -2,6 +2,7 @@
 /*GENERAL*/
 /*HEADER*/
 /*FOOTER*/
+/*MIXIN*/
 .header {
   grid-area: header;
   display: flex;
@@ -46,12 +47,12 @@
     padding: 0.5rem; }
     .header__nav li {
       list-style: none;
-      background-color: #a62121;
-      box-shadow: 2px 2px 0px #d9a84e;
       border-radius: 20px;
       font-family: 'Lobster', cursive;
       margin: 3px;
-      padding: 0.3rem; }
+      padding: 0.3rem;
+      color: antiquewhite;
+      text-shadow: 1px 2px 0px #2c2c2b; }
       .header__nav li a,
       .header__nav li a:active {
         text-decoration: none;
@@ -98,12 +99,12 @@ nav {
     align-items: center;
     justify-content: center; }
   .footer__btn {
-    color: antiquewhite;
-    background-color: #2c2c2b;
-    box-shadow: 1px 1px 0px antiquewhite;
     padding: 4px;
     border-radius: 15px;
-    font-family: 'lobster'; }
+    font-family: 'lobster';
+    color: antiquewhite;
+    background-color: #2c2c2b;
+    box-shadow: 1px 1px 0px antiquewhite; }
 
 /*FOOTER NOTICIAS---------------------------------------*/
 .footer__div__newsletter {
@@ -111,17 +112,17 @@ nav {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  background-color: #a62121;
-  box-shadow: 2px 2px 0px #d9a84e;
   border-radius: 15px;
   padding: 10px; }
   .footer__div__newsletter p {
     display: flex;
     align-self: center;
     justify-content: center;
+    font-size: 25px;
+    background-color: #a62121;
+    box-shadow: 2px 2px 0px #d9a84e;
     color: antiquewhite;
-    text-shadow: 1px 2px 0px #2c2c2b;
-    font-size: 25px; }
+    text-shadow: 1px 2px 0px #2c2c2b; }
     .footer__div__newsletter p img {
       display: flex;
       align-self: center;
@@ -134,6 +135,90 @@ nav {
     color: antiquewhite;
     text-shadow: 1px 2px 0px #2c2c2b; }
 
+/*MEDIAS-------------------------------------------------------*/
+@media (min-width: 320px) and (max-width: 539px) {
+  /*GENERALES-------------------------------------*/
+  .header {
+    display: flex;
+    flex-direction: row;
+    height: auto; }
+  .header__nav li {
+    height: auto;
+    padding: 0.15rem;
+    margin: 5px; }
+  .header__nav {
+    height: auto;
+    flex-wrap: wrap;
+    width: 22rem; }
+  .header__logo img {
+    max-width: 5rem; }
+  .header__titulo h1 {
+    text-align: center;
+    font-size: 2.5rem; }
+  .header__titles {
+    display: flex;
+    flex-direction: column;
+    height: 8rem;
+    align-items: center;
+    justify-content: center; }
+  .header__subtitulo {
+    font-size: 0.5rem;
+    align-self: center; }
+  /*INDEX--------------------------------------------*/
+  .main__img iframe {
+    margin-top: 1rem;
+    border-radius: 15px;
+    max-width: 22rem;
+    box-shadow: 2px 2px 0px #d9a84e; }
+  .main__btn {
+    font-size: x-large; } }
+
+/*540px TABLET-----------------------------------------*/
+@media (min-width: 540px) and (max-width: 991px) {
+  /*GENERALES-------------------------------------*/
+  .header {
+    display: flex;
+    flex-direction: row; }
+  .header__logo img {
+    max-width: 6rem; }
+  .header__titulo h1 {
+    text-align: center;
+    font-size: 2rem; }
+  .header__titles {
+    display: flex;
+    flex-direction: column;
+    height: 7rem;
+    align-items: center;
+    justify-content: center; }
+  .header__subtitulo {
+    font-size: 0.75rem;
+    align-self: center; }
+  .footer__redes img {
+    max-width: 2rem;
+    padding-top: 2rem; }
+  .footer__h4 {
+    align-self: center;
+    padding-top: 1rem; }
+  /*INDEX------------------------------------------*/
+  .main__img iframe {
+    max-width: 44rem; }
+  /*INTEGRANTES--------------------------------------*/
+  .integrantes__titulo {
+    align-self: center;
+    font-size: 1.5rem; }
+  .main__integrantes__flex {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .main__integrantes__flex p {
+    align-self: flex-start;
+    max-width: 100%;
+    margin-top: 0.5rem; }
+  /*DISCOGRAFIA-------------------------------------*/
+  .main__discografia__disco li {
+    font-size: 0.8rem; } }
+
+/*FIN DE MEDIA QUERIES----------------------------------*/
 /* RESET CSS--------------------------------------------------*/
 * {
   margin: 0px;
@@ -157,7 +242,6 @@ html {
   .main__img iframe {
     margin-top: 1rem;
     border-radius: 15px;
-    max-width: 45rem;
     box-shadow: 2px 2px 0px #d9a84e; }
   .main__img div div img {
     margin-top: 1rem;
@@ -179,13 +263,13 @@ html {
 
 .main__btn {
   margin-top: 0.8rem;
-  background-color: #a62121;
-  box-shadow: 2px 2px 0px #d9a84e;
   color: #d9a84e;
   text-shadow: 1px 2px 0px #2c2c2b;
   padding: 0.3rem;
   border-radius: 15px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-color: #a62121;
+  box-shadow: 2px 2px 0px #d9a84e; }
   .main__btn:hover {
     transform: scale(1.2);
     transition: all 3s; }
@@ -201,16 +285,16 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #a62121;
-  box-shadow: 2px 2px 0px #d9a84e;
   border-radius: 15px;
-  color: antiquewhite;
-  text-shadow: 1px 2px 0px #2c2c2b;
   font-size: medium;
   padding: 0.5rem;
   margin-bottom: 1rem;
   margin-top: 0.5rem;
-  max-width: 70%; }
+  max-width: 70%;
+  background-color: #a62121;
+  box-shadow: 2px 2px 0px #d9a84e;
+  color: antiquewhite;
+  text-shadow: 1px 2px 0px #2c2c2b; }
   .main__integrantes__span p {
     display: flex;
     align-self: center; }
@@ -267,9 +351,9 @@ html {
   margin: 5px;
   margin-top: 15px;
   padding-top: 5px;
+  border-radius: 15px;
   background-color: #a62121;
-  box-shadow: 2px 2px 0px #d9a84e;
-  border-radius: 15px; }
+  box-shadow: 2px 2px 0px #d9a84e; }
   .main__noticias__div img {
     margin-top: 10px;
     max-width: 100%;
@@ -280,9 +364,9 @@ html {
   .main__noticias__div h2 {
     text-align: center;
     font-size: 20px;
+    margin-bottom: 10px;
     color: antiquewhite;
-    text-shadow: 1px 2px 0px #2c2c2b;
-    margin-bottom: 10px; }
+    text-shadow: 1px 2px 0px #2c2c2b; }
   .main__noticias__div p {
     color: antiquewhite;
     text-shadow: 1px 2px 0px #2c2c2b; }
@@ -301,84 +385,3 @@ html {
     text-shadow: 1px 1px 0px antiquewhite; }
 
 /*FIN DEL MAIN-------------------------------------------------*/
-/*MEDIAS-------------------------------------------------------*/
-@media (min-width: 320px) and (max-width: 576px) {
-  /*GENERALES-------------------------------------*/
-  .header {
-    display: flex;
-    flex-direction: row;
-    height: auto; }
-  .header__nav li {
-    height: auto;
-    padding: 0.15rem;
-    margin: 5px; }
-  .header__nav {
-    height: auto;
-    flex-wrap: wrap;
-    width: 22rem; }
-  .header__logo img {
-    max-width: 5rem; }
-  .header__titulo h1 {
-    text-align: center;
-    font-size: 2.5rem; }
-  .header__titles {
-    display: flex;
-    flex-direction: column;
-    height: 8rem;
-    align-items: center;
-    justify-content: center; }
-  .header__subtitulo {
-    font-size: 0.5rem;
-    align-self: center; }
-  /*INDEX--------------------------------------------*/
-  .main__img iframe {
-    margin-top: 1rem;
-    border-radius: 15px;
-    max-width: 22rem;
-    box-shadow: 2px 2px 0px #d9a84e; }
-  .main__btn {
-    font-size: x-large; } }
-
-/*540px TABLET-----------------------------------------*/
-@media (min-width: 577px) and (max-width: 991px) {
-  /*GENERALES-------------------------------------*/
-  .header {
-    display: flex;
-    flex-direction: row; }
-  .header__logo img {
-    max-width: 6rem; }
-  .header__titulo h1 {
-    text-align: center;
-    font-size: 2rem; }
-  .header__titles {
-    display: flex;
-    flex-direction: column;
-    height: 7rem;
-    align-items: center;
-    justify-content: center; }
-  .header__subtitulo {
-    font-size: 0.75rem;
-    align-self: center; }
-  .footer__redes img {
-    max-width: 2rem;
-    padding-top: 2rem; }
-  .footer__h4 {
-    align-self: center;
-    padding-top: 1rem; }
-  /*INTEGRANTES--------------------------------------*/
-  .integrantes__titulo {
-    align-self: center;
-    font-size: 1.5rem; }
-  .main__integrantes__flex {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
-  .main__integrantes__flex p {
-    align-self: flex-start;
-    max-width: 100%;
-    margin-top: 0.5rem; }
-  /*DISCOGRAFIA-------------------------------------*/
-  .main__discografia__disco li {
-    font-size: 0.8rem; } }
-
-/*FIN DE MEDIA QUERIES----------------------------------*/

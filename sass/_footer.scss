@@ -29,13 +29,11 @@
     align-items: center;
     justify-content: center;
     }
-    &__btn{
-    color:$color-letra-btn;
-    background-color:$color-fondo-btn;
-    box-shadow:$color-sombra-btn; 
+    &__btn{ 
     padding: 4px; 
     border-radius: 15px; 
     font-family: 'lobster';
+    @include btn;
     }
 }
 /*FOOTER NOTICIAS---------------------------------------*/
@@ -44,17 +42,15 @@
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    background-color:$color-fondo-caja;
-    box-shadow:$color-sombra-caja;
     border-radius: 15px;
     padding: 10px;
     & p{
     display: flex;
     align-self: center;
     justify-content: center;
-    color:$color-letras-parrafos;
-    text-shadow:$color-sombra-parrafos;
     font-size: 25px;
+    @include cajas;
+    @include parrafos;
         & img{
             display: flex;
             align-self: center;
@@ -66,7 +62,6 @@
         }   
     }
     & label{
-    color:$color-letras-parrafos;
-    text-shadow:$color-sombra-parrafos;
+        @include parrafos;
     }
 }

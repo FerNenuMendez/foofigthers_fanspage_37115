@@ -1,0 +1,106 @@
+/*MEDIAS-------------------------------------------------------*/
+@media(min-width:320px)and(max-width:539px){
+    /*GENERALES-------------------------------------*/
+    .header{
+        display: flex;
+        flex-direction: row;
+        height:auto;
+    }
+
+    .header__nav li{
+        height: auto;
+        padding: 0.15rem;
+        margin: 5px;
+    }
+    .header__nav{
+        height: auto;
+        flex-wrap: wrap;
+        width: 22rem;
+    }
+    .header__logo img{
+        max-width:5rem; 
+    }
+    .header__titulo h1{  
+        text-align:center;
+        font-size:2.5rem;
+    }
+    .header__titles{
+        display: flex;
+        flex-direction: column;
+        height: 8rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .header__subtitulo{
+        font-size: 0.5rem;
+        align-self: center;  
+    }
+    /*INDEX--------------------------------------------*/
+    .main__img iframe{
+        margin-top: 1rem; 
+        border-radius: 15px;
+        max-width: 22rem;
+        box-shadow: 2px 2px 0px #d9a84e;
+    }
+    .main__btn{
+        font-size: x-large;
+    }
+}
+/*540px TABLET-----------------------------------------*/
+@media(min-width: 540px)and(max-width: 991px){
+    /*GENERALES-------------------------------------*/
+    .header{
+        display: flex;
+        flex-direction: row;
+    }
+    .header__logo img{
+        max-width:6rem;
+    }
+    .header__titulo h1{  
+        text-align:center;
+        font-size:2rem;
+    }
+    .header__titles{
+        display: flex;
+        flex-direction: column;
+        height: 7rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .header__subtitulo{
+        font-size: 0.75rem;
+        align-self: center;  
+    }
+    .footer__redes img{
+        max-width: 2rem; 
+        padding-top: 2rem;
+    }
+    .footer__h4{
+        align-self: center;
+        padding-top: 1rem;
+    }
+    /*INDEX------------------------------------------*/
+    .main__img iframe{
+        max-width: 44rem;
+    }
+    /*INTEGRANTES--------------------------------------*/
+    .integrantes__titulo{
+        align-self: center;
+        font-size:1.5rem;
+    }
+    .main__integrantes__flex{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .main__integrantes__flex p{
+        align-self: flex-start;
+        max-width: 100%;
+        margin-top: 0.5rem;
+    }
+    /*DISCOGRAFIA-------------------------------------*/
+    .main__discografia__disco li{
+        font-size: 0.8rem;
+    }
+}
+/*FIN DE MEDIA QUERIES----------------------------------*/

@@ -1,0 +1,14 @@
+/*MIXIN*/
+@mixin parrafos {
+    color: $color-letras-parrafos;
+    text-shadow: $color-sombra-parrafos;
+}
+@mixin cajas {
+    background-color:$color-fondo-caja;
+    box-shadow:$color-sombra-caja;
+}
+@mixin btn {
+    color:$color-letra-btn;
+    background-color:$color-fondo-btn;
+    box-shadow:$color-sombra-btn;
+}
