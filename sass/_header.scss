@@ -52,6 +52,7 @@
             font-family: 'Lobster', cursive;
             margin: 3px;  
             padding: 0.3rem;
+            @include cajas;
             @include parrafos;
             & a,
             a:active{
