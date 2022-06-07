@@ -41,13 +41,13 @@
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    border-radius: 15px;
-    padding: 10px;
     & p{
     display: flex;
     align-self: center;
     justify-content: center;
     font-size: 25px;
+    border-radius: 15px;
+    padding: 10px;
     @include cajas;
     @include parrafos;
         & img{

@@ -112,14 +112,14 @@ nav {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  align-items: center;
-  border-radius: 15px;
-  padding: 10px; }
+  align-items: center; }
   .footer__div__newsletter p {
     display: flex;
     align-self: center;
     justify-content: center;
     font-size: 25px;
+    border-radius: 15px;
+    padding: 10px;
     background-color: #a62121;
     box-shadow: 2px 2px 0px #d9a84e;
     color: antiquewhite;
